@@ -1,0 +1,9 @@
+{%If submitted%}
+   successfully!!
+{%else}
+<form action="" method=POST>
+    {% csrf_token%}
+    {{form.as_p}}
+    <input type="submit"value="submt"class="btn btn-sec">
+    <br/><br/>
+    {%endblock%}
